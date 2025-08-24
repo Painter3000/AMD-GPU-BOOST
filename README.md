@@ -15,7 +15,7 @@
 <p><strong>Why?</strong> ROCm was designed for MI-series (enterprise) GPUs. Consumer GPUs like RX 6800 XT are "second-class citizens."</p>
 <h2>⚡ The Solution</h2>
     
-<h3>Rapid test:</h3>
+<p>Show the multi_processor_count= ... on your consumer AMD GPU</p>
 <pre><code class="language-bash">python3 -c "import torch; print(torch.cuda.get_device_properties(0))"
 </code></pre></p>
 
