@@ -14,6 +14,11 @@
 </ul>
 <p><strong>Why?</strong> ROCm was designed for MI-series (enterprise) GPUs. Consumer GPUs like RX 6800 XT are "second-class citizens."</p>
 <h2>⚡ The Solution</h2>
+    
+<h3>Rapid test:</h3>
+<pre><code class="language-bash">python3 -c "import torch; print(torch.cuda.get_device_properties(0))"
+</code></pre></p>
+
 <p><strong>AMD-GPU-BOOST</strong> fixes PyTorch's GPU detection at runtime:</p>
 <pre><code class="language-bash"># BEFORE BOOST
 MPs: 36 → Warp Size: 32 → Performance: 25%
@@ -41,7 +46,7 @@ MPs: 72 → Warp Size: 64 → Performance: 100% 🚀
 </ul>
 <h3>RDNA4 Series (Future-Ready)</h3>
 <ul>
-<li>RX 8800 XT, 8900 XTX <em>(Planned support)</em></li>
+<li>RX 9000-Serie <em>(Planned support)</em></li>
 </ul>
 <h2>🚀 Quick Start</h2>
 <h3>Option 1: GUI Installer (Recommended)</h3>
